@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Poppy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #FDFBF7; /* Cozy, warm paper white */
+            --card-bg: #FFFFFF;
+            --text-main: #332F2C; /* Soft dark brown/grey */
+            --text-muted: #8A837E;
+            --accent: #E87A7A; /* Soft poppy red */
+        }
+
+        body {
+            font-family: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 60px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 650px;
+            background-color: var(--card-bg);
+            padding: 50px;
+            border-radius: 24px;
+            box-shadow: 0 8px 32px rgba(51, 47, 44, 0.04);
+            border: 1px solid rgba(0,0,0,0.02);
+            transition: transform 0.3s ease;
+        }
+
+        h1 {
+            color: var(--text-main);
+            font-size: 2.2rem;
+            margin-top: 0;
+            margin-bottom: 8px;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        .date {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 35px;
+            display: inline-block;
+            position: relative;
+            font-weight: 300;
+        }
+
+        .date::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background-color: var(--accent);
+            border-radius: 2px;
+        }
+
+        p {
+            margin-bottom: 24px;
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-bottom: 35px;
+            list-style-type: none; /* Custom bullets */
+        }
+
+        li {
+            margin-bottom: 16px;
+            font-size: 1.1rem;
+            font-weight: 300;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        li::before {
+            content: '•';
+            color: var(--accent);
+            font-size: 1.5rem;
+            position: absolute;
+            left: -10px;
+            top: -4px;
+        }
+
+        li strong {
+            color: var(--text-main);
+            font-weight: 600;
+        }
+        
+        .lang-switch {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(0,0,0,0.05);
+            font-size: 0.95rem;
+        }
+
+        .lang-switch button {
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            cursor: pointer;
+            font-family: inherit;
+            padding: 5px 10px;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            font-weight: 400;
+        }
+
+        .lang-switch button:hover {
+            color: var(--text-main);
+            background-color: var(--bg-color);
+        }
+
+        .lang-switch button.active-lang {
+            color: var(--accent);
+            font-weight: 600;
+            background-color: #FEF4F4;
+        }
+
+        /* Hide elements not in current language */
+        [data-lang] {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        [data-lang].active {
+            display: block;
+            opacity: 1;
+        }
+        
+        @media (max-width: 600px) {
+            body { padding: 30px 15px; }
+            .container { padding: 40px 24px; border-radius: 20px; }
+            h1 { font-size: 1.8rem; }
+            p, li { font-size: 1.05rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- English Content -->
+        <div data-lang="en">
+            <h1>Poppy Privacy Policy</h1>
+            <span class="date">Last updated: June 2026</span>
+            
+            <p>Poppy is an application designed for tracking habits and tasks strictly locally. We highly respect your privacy, which is why we have designed the application under the following principles:</p>
+            
+            <ul>
+                <li><strong>No data collection:</strong> We do not collect, request, or store any personal information (such as names, emails, or passwords).</li>
+                <li><strong>Local Storage:</strong> All information related to your habits, tasks, characters, and settings is stored exclusively in your device's internal storage.</li>
+                <li><strong>No internet connection:</strong> The application works 100% offline and does not have permissions to send data outside your device.</li>
+            </ul>
+            
+            <p>By using Poppy, you agree that your data remains under your own control and on your device.</p>
+        </div>
+
+        <!-- Spanish Content -->
+        <div data-lang="es">
+            <h1>Política de Privacidad de Poppy</h1>
+            <span class="date">Última actualización: Junio 2026</span>
+            
+            <p>Poppy es una aplicación diseñada para el seguimiento de hábitos y tareas de forma estrictamente local. Respetamos al máximo tu privacidad, por lo que hemos diseñado la aplicación bajo los siguientes principios:</p>
+            
+            <ul>
+                <li><strong>Sin recolección de datos:</strong> No recopilamos, solicitamos, ni almacenamos ningún tipo de información personal (como nombres, correos o contraseñas).</li>
+                <li><strong>Almacenamiento Local:</strong> Toda la información relacionada con tus hábitos, tareas, personajes y configuraciones se guarda exclusivamente en el almacenamiento interno de tu propio dispositivo.</li>
+                <li><strong>Sin conexión a internet:</strong> La aplicación funciona 100% offline y no cuenta con permisos para enviar datos fuera de tu dispositivo.</li>
+            </ul>
+            
+            <p>Al utilizar Poppy, aceptas que tus datos permanecen bajo tu propio control y en tu dispositivo.</p>
+        </div>
+
+        <div class="lang-switch">
+            <button id="btn-en" onclick="setLanguage('en')">English</button>
+            <button id="btn-es" onclick="setLanguage('es')">Español</button>
+        </div>
+    </div>
+
+    <script>
+        function setLanguage(lang) {
+            // Update title based on language
+            document.title = lang === 'es' ? 'Política de Privacidad - Poppy' : 'Privacy Policy - Poppy';
+            document.documentElement.lang = lang;
+
+            // Hide all language content
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                el.classList.remove('active');
+            });
+
+            // Show selected language content
+            const activeEl = document.querySelector(`[data-lang="${lang}"]`);
+            if(activeEl) {
+                // small delay to ensure display:block applies before opacity transition
+                activeEl.classList.add('active');
+            }
+
+            // Update button styles
+            document.getElementById('btn-en').classList.remove('active-lang');
+            document.getElementById('btn-es').classList.remove('active-lang');
+            document.getElementById(`btn-${lang}`).classList.add('active-lang');
+        }
+
+        // Detect browser language on load
+        document.addEventListener('DOMContentLoaded', () => {
+            const browserLang = navigator.language || navigator.userLanguage; 
+            const defaultLang = browserLang.toLowerCase().startsWith('es') ? 'es' : 'en';
+            setLanguage(defaultLang);
+        });
+    </script>
+</body>
+</html>
