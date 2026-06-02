@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - How1tzer Apps</title>
+    <title>Privacy Policy & Terms of Use - How1tzer Apps</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -46,6 +46,15 @@
             margin-bottom: 8px;
             font-weight: 700;
             letter-spacing: -0.02em;
+        }
+
+        h2 {
+            color: var(--text-main);
+            font-size: 1.5rem;
+            margin-top: 30px;
+            margin-bottom: 16px;
+            font-weight: 600;
+            letter-spacing: -0.01em;
         }
 
         .date {
@@ -149,6 +158,7 @@
             body { padding: 30px 15px; }
             .container { padding: 40px 24px; border-radius: 20px; }
             h1 { font-size: 1.8rem; }
+            h2 { font-size: 1.3rem; }
             p, li { font-size: 1.05rem; }
         }
     </style>
@@ -158,7 +168,7 @@
     <div class="container">
         <!-- English Content -->
         <div data-lang="en">
-            <h1>Privacy Policy for How1tzer Apps</h1>
+            <h1>Privacy Policy & Terms of Use for How1tzer Apps</h1>
             <span class="date">Last updated: June 2026</span>
             
             <p>Our applications, developed by How1tzer, are designed to work strictly locally. We highly respect your privacy, which is why we have designed our applications under the following principles:</p>
@@ -170,11 +180,20 @@
             </ul>
             
             <p>By using any application developed by How1tzer, you agree that your data remains under your own control and on your device.</p>
+
+            <h2>Terms of Use & Limitation of Liability</h2>
+            
+            <ul>
+                <li><strong>"As Is" Basis:</strong> Our applications are provided "as is" and "as available", without warranties of any kind, either express or implied.</li>
+                <li><strong>User Responsibility:</strong> Since all data is stored locally on your device, you are solely responsible for maintaining backups of your data. How1tzer cannot recover any lost or deleted information.</li>
+                <li><strong>Limitation of Liability:</strong> How1tzer shall not be held liable for any direct, indirect, incidental, or consequential damages, including but not limited to data loss, device malfunction, or business interruption arising from the use or inability to use our applications.</li>
+                <li><strong>Changes to the Apps:</strong> We reserve the right to modify, update, or discontinue any app or feature at any time without prior notice.</li>
+            </ul>
         </div>
 
         <!-- Spanish Content -->
         <div data-lang="es">
-            <h1>Política de Privacidad para las aplicaciones de How1tzer</h1>
+            <h1>Política de Privacidad y Términos de Uso para las aplicaciones de How1tzer</h1>
             <span class="date">Última actualización: Junio 2026</span>
             
             <p>Nuestras aplicaciones, desarrolladas por How1tzer, están diseñadas para funcionar de forma estrictamente local. Respetamos al máximo tu privacidad, por lo que hemos diseñado nuestras aplicaciones bajo los siguientes principios:</p>
@@ -186,6 +205,15 @@
             </ul>
             
             <p>Al utilizar cualquier aplicación desarrollada por How1tzer, aceptas que tus datos permanecen bajo tu propio control y en tu dispositivo.</p>
+
+            <h2>Términos de Uso y Limitación de Responsabilidad</h2>
+            
+            <ul>
+                <li><strong>Base "Tal cual":</strong> Nuestras aplicaciones se proporcionan "tal cual" y "según disponibilidad", sin garantías de ningún tipo, ya sean expresas o implícitas.</li>
+                <li><strong>Responsabilidad del Usuario:</strong> Dado que todos los datos se almacenan localmente en tu dispositivo, eres el único responsable de mantener copias de seguridad de tus datos. How1tzer no puede recuperar ninguna información perdida o eliminada.</li>
+                <li><strong>Limitación de Responsabilidad:</strong> How1tzer no será responsable de ningún daño directo, indirecto, incidental o consecuente, incluyendo pero no limitado a la pérdida de datos, mal funcionamiento del dispositivo o interrupción del negocio derivada del uso o la incapacidad de usar nuestras aplicaciones.</li>
+                <li><strong>Cambios en las Aplicaciones:</strong> Nos reservamos el derecho de modificar, actualizar o discontinuar cualquier aplicación o función en cualquier momento sin previo aviso.</li>
+            </ul>
         </div>
 
         <div class="lang-switch">
@@ -197,7 +225,7 @@
     <script>
         function setLanguage(lang) {
             // Update title based on language
-            document.title = lang === 'es' ? 'Política de Privacidad - Aplicaciones de How1tzer' : 'Privacy Policy - How1tzer Apps';
+            document.title = lang === 'es' ? 'Política de Privacidad y Términos de Uso - Aplicaciones de How1tzer' : 'Privacy Policy & Terms of Use - How1tzer Apps';
             document.documentElement.lang = lang;
 
             // Hide all language content
